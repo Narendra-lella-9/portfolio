@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narendra Lella — Python Fullstack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════════════════
+       ANIMATED DOT BACKGROUND
+       ═══════════════════════════════════════════════════════ -->
+    <canvas id="dot-bg" class="dot-background"></canvas>
+
+    <!-- ═══════════════════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">NL<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Switch to dark theme"
+          title="Toggle theme"
+        >
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <a href="#contact" class="nav-cta">Contact Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero" data-logo="python">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            I'm <span class="highlight">Lella Venkata</span><br />Narendra
+          </h1>
+          <!-- <p class="hero-role">
+            <span class="role-badge"
+              >B.Tech in Electronics and Communication Engineering</span
+            >
+            <span class="role-exp">Graduate • 2019–2023</span>
+          </p> -->
+          <p class="hero-desc">
+            To explore new areas and work in a dynamic, stable organization. I
+            am keen to improve my skills and knowledge while contributing to the
+            growth of the organization and pursuing long-term career
+            development.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">years experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Core Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <i class="fa-brands fa-python"></i>
+            </div>
+          </div>
+          <div class="floating-tag tag-1"><i class="fas fa-robot"></i> AI</div>
+          <div class="floating-tag tag-2">
+            <i class="fas fa-brain"></i> LLMs
+          </div>
+          <div class="floating-tag tag-3">
+            <i class="fas fa-layer-group"></i> RAG Systems
+          </div>
+          <div class="floating-tag tag-4">
+            <i class="fas fa-bolt"></i> FastAPI
+          </div>
+          <div class="floating-tag tag-5">
+            <i class="fab fa-docker"></i> Docker
+          </div>
+          <div class="floating-tag tag-7">
+            <i class="fab fa-git-alt"></i> GIT
+          </div>
+          <div class="floating-tag tag-6">
+            <i class="fas fa-cloud"></i> Azure MLOps
+          </div>
+          <div class="floating-tag tag-8">
+            <i class="fas fa-sync-alt"></i> CI/CD
+          </div>
+          <div class="floating-tag tag-9">
+            <i class="fas fa-database"></i> Databases
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════════════════════ -->
+    <section class="about section" id="about" data-logo="code">
+      <div class="container">
+        <div class="section-label">ABOUT ME</div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Career Objective</h3>
+            <p>
+              Seeking a dynamic and stable organization where I can explore new
+              areas, enhance my skills, gain practical exposure, and contribute
+              to the company’s goals while growing along with the organization.
+            </p>
+          </div>
+
+          <div class="about-card featured">
+            <div class="about-profile-badge">
+              <span class="badge-en">Graduate</span>
+            </div>
+            <h2>Lella Venkata Narendra</h2>
+            <p class="about-main-role">
+              Electronics and Communication Engineer
+            </p>
+            <p class="about-bio">
+              I am a motivated engineering graduate with a strong academic
+              foundation in electronics and communication, practical exposure
+              through IoT and image- processing projects, and a passion for
+              continuous learning and personal growth.
+            </p>
+            <div class="about-links">
+              <a href="mailto:narendra.lella20@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a href="tel:+919493547173"><i class="fas fa-phone"></i></a>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon orange">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Strengths</h3>
+            <p>
+              Self-motivation, competitive spirit, and good leadership qualities
+              with a strong willingness to learn and take initiative in new
+              environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       SKILLS SECTION
+       ═══════════════════════════════════════════════════════ -->
+    <section class="skills section" id="skills" data-logo="aiml">
+      <div class="container">
+        <div class="section-label">SKILLS</div>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <p class="section-sub">
+          Core technical and software skills listed in my resume
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-group backend-card" id="backend-card">
+            <div class="skill-group-header">
+              <i class="fab fa-python"></i>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 85%"></div>
+                </div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C</span>
+                <div class="skill-bar">
+                  <div class="skill-fill orange" style="--pct: 72%"></div>
+                </div>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Java</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 68%"></div>
+                </div>
+                <span class="skill-pct">68%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar">
+                  <div class="skill-fill orange" style="--pct: 76%"></div>
+                </div>
+                <span class="skill-pct">76%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-header">
+              <i class="fas fa-code"></i>
+              <h3>Web Basics</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 88%"></div>
+                </div>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-fill orange" style="--pct: 82%"></div>
+                </div>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MS Office</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 78%"></div>
+                </div>
+                <span class="skill-pct">78%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-header">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Creative Tools</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Photoshop</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 74%"></div>
+                </div>
+                <span class="skill-pct">74%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Illustrator</span>
+                <div class="skill-bar">
+                  <div class="skill-fill orange" style="--pct: 72%"></div>
+                </div>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Lightroom</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 80%"></div>
+                </div>
+                <span class="skill-pct">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span class="tag">Python</span>
+          <span class="tag">C</span>
+          <span class="tag">Java</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Photoshop</span>
+          <span class="tag">Illustrator</span>
+          <span class="tag">Lightroom</span>
+          <span class="tag">MS Office</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       PROJECTS SECTION
+       ═══════════════════════════════════════════════════════ -->
+    <section class="projects section" id="projects" data-logo="react">
+      <div class="container">
+        <div class="section-label">PROJECTS</div>
+        <h2 class="section-title">Major <span>Projects</span></h2>
+        <p class="section-sub">
+          Projects completed during my engineering journey and academic work
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card featured-project">
+            <div class="project-badge">IoT</div>
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+            </div>
+            <h3>Food Delivery Security System using IoT</h3>
+            <p>
+              An IoT-based security-focused solution developed for efficient and
+              safer food delivery handling, combining embedded-based system
+              thinking with practical smart monitoring.
+            </p>
+            <div class="project-stack">
+              <span>IoT</span>
+              <span>Embedded Systems</span>
+              <span>Smart Monitoring</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon orange">
+                <i class="fas fa-water"></i>
+              </div>
+            </div>
+            <h3>Haze Removal of Underwater Images</h3>
+            <p>
+              Built a color and contrast enhancement-based image processing
+              system for underwater images using fusion technique to improve
+              visibility and image quality in hazy conditions.
+            </p>
+            <div class="project-stack">
+              <span>Image Processing</span>
+              <span>Python</span>
+              <span>Computer Vision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       CERTIFICATES & ACTIVITIES
+       ═══════════════════════════════════════════════════════ -->
+    <section class="contact section" id="highlights" data-logo="code">
+      <div class="container">
+        <div class="section-label">RESUME HIGHLIGHTS</div>
+        <h2 class="section-title">
+          Certificates, <span>Workshops & Activities</span>
+        </h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Certificates</h3>
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div>
+                  <strong>Sensor and Actuators</strong><br />NPTEL, 2022
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div><strong>Internet of Things</strong><br />VERZEO, 2022</div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div>
+                  <strong>Fundamentals of Digital Marketing</strong><br />Google
+                  Digital Garage, 2019
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-info">
+            <h3>Workshops & Activities</h3>
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+                <div>
+                  <strong>Internship</strong><br />South Central Railways —
+                  Signaling and Telecommunications
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <div>
+                  <strong>Workshop</strong><br />PCD Design by Microlink
+                  Technologies
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fas fa-code"></i></div>
+                <div>
+                  <strong>Workshop</strong><br />Master Workshop on HTML5 and
+                  CSS3
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════════════════════════ -->
+    <section class="contact section" id="contact" data-logo="code">
+      <div class="container">
+        <div class="section-label">CONTACT</div>
+        <h2 class="section-title">Let's <span>Work Together</span></h2>
+        <p class="section-sub">
+          Have a project in mind? I'd love to hear about it.
+        </p>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              I am available for opportunities that allow me to build on my
+              technical foundation, improve my skills, and contribute to a
+              growth-focused organization.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <strong>Email</strong><br /><a
+                    href="mailto:narendra.lella20@gmail.com"
+                    >narendra.lella20@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <strong>Phone</strong><br /><a href="tel:+919493547173"
+                    >+91 9493547173</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <strong>Address</strong><br />Door no 2-3, Prajavidhyashala
+                  Hospital Road, Mylavaram, Krishna District, Andhra Pradesh -
+                  521230
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-language"></i>
+                </div>
+                <div>
+                  <strong>Languages</strong><br />Telugu, Hindi, English
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Project inquiry"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       PERSONAL INFORMATION
+       ═══════════════════════════════════════════════════════ -->
+    <section class="contact section" id="personal-info" data-logo="code">
+      <div class="container">
+        <div class="section-label">PERSONAL INFO</div>
+        <h2 class="section-title">Additional <span>Details</span></h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Personal Information</h3>
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon"><i class="fas fa-user"></i></div>
+                <div><strong>Father's Name</strong><br />L. Murali Mohan</div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div><strong>Mother's Name</strong><br />L. Anuradha</div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fas fa-flag"></i></div>
+                <div><strong>Nationality</strong><br />Indian</div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div>
+                  <strong>Hobbies</strong><br />Cooking, Photography, Editing
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-info">
+            <h3>Extra & Co-Curricular</h3>
+            <ul class="contact-list">
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <div>
+                  <strong>NSS Volunteer</strong><br />Participated as NSS
+                  volunteer for 2 years
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-language"></i>
+                </div>
+                <div>
+                  <strong>Hindi Qualification</strong><br />Degree in Hindi from
+                  Dhashan Bharath Hindi Prachar Sabha
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-user-check"></i>
+                </div>
+                <div>
+                  <strong>Class Representative</strong><br />Volunteered as a
+                  class representative for 3 years and continuing
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon orange">
+                  <i class="fas fa-file-signature"></i>
+                </div>
+                <div>
+                  <strong>Declaration</strong><br />I hereby declare the above
+                  information is true to my knowledge and belief.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-logo">NL<span>.</span></span>
+        <p>
+          © 2026 Lella Venkata Narendra. Built with care and personal details
+          from the resume.
+        </p>
+        <div class="footer-socials">
+          <a href="mailto:narendra.lella20@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+919493547173"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
