@@ -619,6 +619,35 @@ class ThemeToggle {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
+// ARTICLE CAROUSEL
+// ═══════════════════════════════════════════════════════════════════════════
+
+const articleSlider = document.querySelector(".article-slider");
+const articlePrev = document.querySelector(".article-prev");
+const articleNext = document.querySelector(".article-next");
+
+if (articleSlider && articlePrev && articleNext) {
+  const getScrollDistance = () => {
+    const firstCard = articleSlider.querySelector(".article-card");
+    return firstCard ? firstCard.getBoundingClientRect().width + 20 : 340;
+  };
+
+  articlePrev.addEventListener("click", () => {
+    articleSlider.scrollBy({
+      left: -getScrollDistance(),
+      behavior: "smooth",
+    });
+  });
+
+  articleNext.addEventListener("click", () => {
+    articleSlider.scrollBy({
+      left: getScrollDistance(),
+      behavior: "smooth",
+    });
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
 // INITIALIZATION
 // ═══════════════════════════════════════════════════════════════════════════
 
